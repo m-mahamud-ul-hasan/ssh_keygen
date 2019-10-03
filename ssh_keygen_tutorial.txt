@@ -1,0 +1,87 @@
+01. At First open your run comman box or use shortcut ctrl+r
+
+02. Type on run command box          crdential manager 
+
+03. Enter
+
+04. Here you will findout two tab a. Web Credentials b. Wndows Crdential   Click on Windows
+	credentials
+
+05. On bellow you will see Generic Credentials
+	if you see here github.com link you need to remove it to click right side arrow key
+	And remobe
+	
+	if you dont see github.com link then close this Credential Manager diolouge box
+
+
+Then Important:
+
+01. Open Your gitbash from desktop
+02. type on your gitbas:
+	$ ssh-keygen -t rsa -b 4096 -C "your_name@gmail.com"
+	
+	As like
+		ssh-keygen -t rsa -b 4096 -C "hasan.cse.duet@gmail.com"
+
+=====Then you will see;
+	Generating public/private rsa key pair.
+        Enter file in which to save the key (/c/Users/hasan/.ssh/id_rsa):[filename]
+
+Here command want to enter file name but no need to enter any file name: must be just click enter key
+important: no enter any file name there just click enter button
+
+03: ====Then you will see:
+	Enter passphrase (empty for no passphrase):
+Here you need to enter any password which you can remmeber for next use.
+	Enter Same passphrase (Password) again:
+ If you wanna to enter no password then click only Enter
+
+04. ===Then you will see:
+	Your Identification has been saved in git_keys..
+	............
+	................................
+	The key's randomart image is:
+	+...........[RSA 4096]........+
+	|			        |
+	|				|
+	............code here...........
+	|  				|
+	|				|
+	+...............................+
+
+05. Then again type:
+	$ eval $(ssh-agent -s)
+=======Then you will see:
+	Agent pid 12808 (like this id or diffrent value)
+
+06. Again Type to add ssh key
+	$ ssh-add ~/.ssh/id_rsa
+=======Then you will see:
+	Enter passphrase for /c/users/Mahamud?.ssh/id_rsa: 
+	Here enter previous password you have set before as step- 03:
+
+07. Now you need to copy all of code from you Git Bash
+     So type or copy this code:
+
+	$ clip < ~/.ssh/id_rsa.pub
+
+
+08. Okey and wow you just set all of ssh-keygen for your github
+Now the work for you only set your github.com as copy paste
+	a. LogIn your github Account.
+		from right top corner go to settig from your github	
+	b. Then open new page: From left you will see tab "Personal Settings" here click-> SSH and GPG keys
+ 	c. Then open new side bar and SSH keys: now click on "New SSH key" tab.
+	d. Give an any title
+	e. key box:
+		paste your key here whose you copy from your git bash
+		(ctrl+v)
+	f. And finlay click on ADD SSH key button
+
+Yes, You have complete your SSH-Keygen for use git hub.
+
+Thanking you!
+Md. Mahamud- Ul- Hasan
+
+
+
