@@ -79,6 +79,7 @@ Now the work for you only set your github.com as copy paste
 	f. And finlay click on ADD SSH key button
 
 Yes, You have complete your SSH-Keygen for use git hub.
+all is okey.
 
 Thanking you!
 Md. Mahamud- Ul- Hasan
